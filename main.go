@@ -49,6 +49,7 @@ func main() {
 	var lb, ub int
 	fmt.Fscan(os.Stdin, &lb)
 	fmt.Fscan(os.Stdin, &ub)
+	fmt.Println("Подождите, выполняется сканирование... ")
 	ports := make(chan int, 100)
 	results := make(chan int)
 	var openports []int
